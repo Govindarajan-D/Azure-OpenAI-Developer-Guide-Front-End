@@ -15,7 +15,7 @@ echo ""
 echo "Set environment variable"
 echo ""
 
-export APPSETTING_API_ENDPOINT="https://localhost:4242"
+export APPSETTING_API_ENDPOINT="https://stock-openai-backend.blackdesert-3d1b14aa.centralus.azurecontainerapps.io"
 
 echo ""
 echo "Building frontend"
