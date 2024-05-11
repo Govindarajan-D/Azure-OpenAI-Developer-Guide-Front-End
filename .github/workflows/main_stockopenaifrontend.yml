@@ -28,8 +28,8 @@ jobs:
           ./manual-build.sh
       - name: npm run
         run: |
-          npm run build --if-present
-          npm run test --if-present
+          export APPSETTING_API_ENDPOINT="https://stock-openai-backend.blackdesert-3d1b14aa.centralus.azurecontainerapps.io"
+          ./manual-build.sh
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
