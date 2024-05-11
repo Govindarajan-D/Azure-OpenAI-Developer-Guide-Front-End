@@ -24,6 +24,7 @@ jobs:
       - name: npm install, build
         run: |
           npm install
+          export APPSETTING_API_ENDPOINT="https://stock-openai-backend.blackdesert-3d1b14aa.centralus.azurecontainerapps.io"
           ./manual-build.sh
       - name: npm run
         run: |
